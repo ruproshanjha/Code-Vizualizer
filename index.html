@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Code Visualizer</h1>
+      <a href="#about">About</a>
+    </header>
+
+    <main>
+      <div class="array-input">
+        <label for="array-size">Array Size:</label>
+        <input
+          type="number"
+          id="array-size"
+          min="2"
+          max="20"
+          placeholder="Enter size"
+        />
+        <button id="generate-array">Generate Array</button>
+      </div>
+
+      <div class="algorithm-selection">
+        <label for="algorithm">Choose Algorithm:</label>
+        <select id="algorithm">
+          <option value="bubble">Bubble Sort</option>
+          <option value="selection">Selection Sort</option>
+        </select>
+      </div>
+
+      <button id="start">Start Visualization</button>
+    </main>
+
+    <div id="visualization-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-modal">&times;</span>
+        <div id="visualization-area"></div>
+      </div>
+    </div>
+
+    <footer>Made with love by Roshu</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
